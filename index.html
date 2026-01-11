@@ -1,94 +1,63 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
+    <meta charset="UTF-8">
+    <title>My Personal Clock</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            /* 背景画像を設定 */
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://www.mokkotsu.com/special/20230123_accentcross_toku1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        #clock {
+            font-size: 10rem;
+            font-weight: 200;
+            letter-spacing: -2px;
+            text-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        #date {
+            font-size: 2.5rem;
+            margin-top: -10px;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</p>
-<p class="p1">&lt;html&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta http-equiv="Content-Style-Type" content="text/css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="Generator" content="Cocoa HTML Writer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="CocoaVersion" content="2575.7"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style type="text/css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&amp;lt;html lang="ja"&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&amp;lt;head&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;    &lt;/span&gt;&amp;lt;meta charset="UTF-8"&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;    &lt;/span&gt;&amp;lt;title&amp;gt;My Personal Clock&amp;lt;/title&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;    &lt;/span&gt;&amp;lt;style&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;        &lt;/span&gt;* { margin: 0; padding: 0; box-sizing: border-box; }&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p2"&gt;&lt;br&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;        &lt;/span&gt;body {&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;/* https://www.mokkotsu.com/special/20230123_accentcross */&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),&lt;span class="Apple-converted-space"&gt; &lt;/span&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;                        &lt;/span&gt;url('https://www.mokkotsu.com/special/20230123_accentcross_toku1.jpg') no-repeat center center fixed;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;background-size: cover;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;height: 100vh;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;display: flex;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;flex-direction: column;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;justify-content: center;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;align-items: center;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;color: white;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;font-family: 'Helvetica Neue', Arial, sans-serif;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;overflow: hidden;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;        &lt;/span&gt;}&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p2"&gt;&lt;br&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;        &lt;/span&gt;#clock {&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;font-size: 10rem;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;font-weight: 200;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;letter-spacing: -2px;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;text-shadow: 0 0 20px rgba(0,0,0,0.5);&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;        &lt;/span&gt;}&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p2"&gt;&lt;br&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;        &lt;/span&gt;#date {&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;font-size: 2.5rem;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;margin-top: -10px;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;font-weight: 300;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;opacity: 0.9;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;        &lt;/span&gt;}&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;    &lt;/span&gt;&amp;lt;/style&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&amp;lt;/head&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&amp;lt;body&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p2"&gt;&lt;br&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;    &lt;/span&gt;&amp;lt;div id="clock"&amp;gt;00:00:00&amp;lt;/div&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;    &lt;/span&gt;&amp;lt;div id="date"&amp;gt;YYYY/MM/DD&amp;lt;/div&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p2"&gt;&lt;br&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;    &lt;/span&gt;&amp;lt;script&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;        &lt;/span&gt;function updateTime() {&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;const now = new Date();&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p2"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;// 時計の更新&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;const h = String(now.getHours()).padStart(2, '0');&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;const m = String(now.getMinutes()).padStart(2, '0');&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;const s = String(now.getSeconds()).padStart(2, '0');&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;document.getElementById('clock').textContent = `${h}:${m}:${s}`;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p2"&gt;&lt;br&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;// 日付の更新&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;            &lt;/span&gt;document.getElementById('date').textContent = now.toLocaleDateString('ja-JP', options);&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;        &lt;/span&gt;}&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p2"&gt;&lt;br&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;        &lt;/span&gt;setInterval(updateTime, 1000);&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;        &lt;/span&gt;updateTime();&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&lt;span class="Apple-converted-space"&gt;    &lt;/span&gt;&amp;lt;/script&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&amp;lt;/body&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;p class="p1"&gt;&amp;lt;/html&amp;gt;&lt;/p&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+    <div id="clock">00:00:00</div>
+    <div id="date">YYYY/MM/DD</div>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            
+            // 時計の更新
+            const h = String(now.getHours()).padStart(2, '0');
+            const m = String(now.getMinutes()).padStart(2, '0');
+            const s = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+
+            // 日付の更新
+            const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+            document.getElementById('date').textContent = now.toLocaleDateString('ja-JP', options);
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
 </body>
 </html>
